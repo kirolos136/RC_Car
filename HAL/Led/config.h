@@ -1,6 +1,6 @@
 #ifndef CONFIG_H
 #define CONFIG_H
-#include"../../mcal/DIO_interface.h"
+#include "../../MCAL/DIO/DIO_interface.h"
 
 //assume active high
 typedef struct Led_config

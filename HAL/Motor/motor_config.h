@@ -1,7 +1,7 @@
 #ifndef MOTOR_CONFIG_H
 #define MOTOR_CONFIG_H
-#include "../../MCAL/DIO_interface.h"
-#include "../../MCAL/pwm/pwm_interface.h"
+#include "../../MCAL/DIO/DIO_interface.h"
+#include "../../MCAL/PWM/PWM_interface.h"
 
 typedef struct {
     DIO_Port port;

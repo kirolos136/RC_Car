@@ -1,7 +1,7 @@
 #ifndef DIO_INTERFACE_H
 #define DIO_INTERFACE_H
 
-#include "../lib/std_types.h"
+#include "../../LIB/std_types.h"
 
 
 typedef enum {DIO_PORTA, DIO_PORTB, DIO_PORTC, DIO_PORTD} DIO_Port;

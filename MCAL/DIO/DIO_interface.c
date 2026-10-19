@@ -1,6 +1,6 @@
 #include "DIO_interface.h"
 #include "DIO_private.h"
-#include "../lib/bit_math.h"
+#include "../../LIB/bit_math.h"
 
 DIO_ErrorStatus DIO_setPinDirection(DIO_Port port, DIO_Pin pin, DIO_Dir dir)
 {

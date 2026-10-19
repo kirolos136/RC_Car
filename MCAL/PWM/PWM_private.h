@@ -1,7 +1,7 @@
 #ifndef PWM_PRIVATE
 #define PWM_PRIVATE
 
-#include"../../lib/std_types.h"
+#include "../../LIB/std_types.h"
 
 /* ---------- Settings ---------- */
 #define PWM_TOP              999U  /* ICR1 value: 8MHz / (8 x 1000) = 1 kHz PWM */

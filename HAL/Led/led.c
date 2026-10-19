@@ -1,5 +1,5 @@
-#include"led.h"
-#include"config.h"
+#include "led.h"
+#include "config.h"
 
 extern Led_config leds_configuration[];
 

@@ -1,7 +1,7 @@
 #ifndef DIO_PRIVATE_H
 #define DIO_PRIVATE_H
 
-#include "../lib/std_types.h"
+#include "../../LIB/std_types.h"
 
 #define PORTA_REG   (*(volatile u8 *)0x3B)
 #define DDRA_REG    (*(volatile u8 *)0x3A)

@@ -1,6 +1,6 @@
 #include "PWM_private.h"
 #include "PWM_interface.h"
-#include "../../lib/bit_math.h"
+#include "../../LIB/bit_math.h"
 
 PWM_ErrorStatus PWM_Init(void){
     //first com to be non inverting 

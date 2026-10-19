@@ -1,21 +1,12 @@
-#include"../hal/led/led.h"
+#include "../HAL/Led/led.h"
 #include <util/delay.h>
-int main(){
+#include "../HAL/Bluetooth/BLUETOOTH_interface.h"
+
+int main(void){
+    bluetooth_init();
     while(1){
-        led_init(LED_0);
-        led_init(LED_1);
-        led_init(LED_2);
-
-        led_on(LED_0);
-        _delay_ms(500);
-        led_off(LED_0);
-
-        led_on(LED_1);
-        _delay_ms(500);
-        led_off(LED_1);
-
-        led_on(LED_2);
-        _delay_ms(500);
-        led_off(LED_2);
+        u8 byte;
+        bluetooth_receiveByte(&byte);
+        bluetooth_sendByte(byte);
     }
 }
