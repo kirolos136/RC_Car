@@ -34,3 +34,14 @@ UART_ErrorStatus UART_receiveByte(u8* Ptr_byte){
 
     return UART_OK;
 }
+
+UART_ErrorStatus UART_ReceiveByteNonBlocking(u8* Ptr_byte){
+    if(Ptr_byte == NULL) return UART_NOK;
+
+    if(UCSRA_REG & (1 << UART_RXC)){   /* byte waiting? */
+        *Ptr_byte = UDR_REG;           /* read once -> hardware clears RXC */
+        return UART_OK;
+    }
+
+    return UART_NO_DATA;               /* nothing arrived: return immediately */
+}
